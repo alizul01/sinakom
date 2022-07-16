@@ -4,15 +4,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->foreignId('role_id')->constrained();
@@ -24,7 +22,7 @@ return new class extends Migration
             $table->string('address')->nullable();;
             $table->char('gender')->nullable();;
             $table->string('photo_path')->nullable();
-            $table->string('phone', 15)->nullable();;
+            $table->string('phone', 25)->nullable();;
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
@@ -36,8 +34,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('users');
     }
 };
