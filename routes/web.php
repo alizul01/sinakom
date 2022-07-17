@@ -4,22 +4,25 @@ use App\Models\User;
 use App\Models\CourseList;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\CourseListController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\Menu\MenuItemController;
 use App\Http\Controllers\Menu\MenuGroupController;
-use App\Http\Controllers\QuizController;
 use App\Http\Controllers\RoleAndPermission\RoleController;
 use App\Http\Controllers\RoleAndPermission\ExportRoleController;
 use App\Http\Controllers\RoleAndPermission\ImportRoleController;
 use App\Http\Controllers\RoleAndPermission\PermissionController;
+use App\Http\Controllers\RoleController as ControllersRoleController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
 use App\Http\Controllers\RoleAndPermission\ImportPermissionController;
-use App\Http\Controllers\RoleController as ControllersRoleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +47,7 @@ Route::group(['middleware' => ['auth']], function() {
         Route::resource('/quizzes', QuizController::class);
         Route::resource('/questions', QuestionController::class);
         Route::resource('/membership', MembershipController::class);
+        Route::resource('/categories', CategoryController::class);
         Route::resource('role', RoleController::class);
         Route::get('role/export', ExportRoleController::class)->name('role.export');
         Route::post('role/import', ImportRoleController::class)->name('role.import');
