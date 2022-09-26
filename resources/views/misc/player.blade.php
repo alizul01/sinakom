@@ -117,6 +117,59 @@
                             Dua orang narapidana ditahan di penjara bawah tanah. Suatu hari pengunjung misterius menawarkan mereka cara untuk keluar. Mereka akan diberi 3 buah kotak bertuliskan K1, K2, dan K3 yang hanya bisa dipilih salah satu saja. Di dalam salah satu kotak tersebut terdapat 1 kunci untuk keluar dari penjara. Apabila mereka memilih dengan benar, maka mereka bisa keluar dari penjara. Namun apabila mereka tidak, atau salah memilih, maka mereka tidak akan bisa keluar selamanya.
                         </p>
                         <h6 class="ms-4 fw-bold">Petunjuk : </h6>
+                        <ol class="ms-5">
+                            <li>
+                               Terdapat 6 petunjuk yang diberikan. Petunjuk-petunjuk tersebut dituliskan pada masing-masing kotak:
+                               <ol>
+                                <li>
+                                    Pada kotak K1 tertulis:
+                                </li>
+                                <ol type="A">
+                                    <li>
+                                        Kuncinya terbuat dari tembaga
+                                    </li>
+                                    <li>
+                                        Kuncinya bukan di kotak ini.
+                                    </li>
+                                </ol>
+                                <li>
+                                    Pada kotak K2 tertulis:
+                                </li>
+                                <ol type="A" start="3">
+                                    <li>
+                                        Kuncinya juga bukan di kotak ini.
+                                    </li>
+                                    <li>
+                                        Kuncinya berada di kotak K3
+                                    </li>
+                                </ol>
+                                <li>Pada kotak K3 tertulis:</li>
+                                <ol type="A" start="5">
+                                    <li>
+                                        Kuncinya terbuat dari perak.
+                                    </li>
+                                    <li>
+                                        Kuncinya bukan di kotak K1.
+                                    </li>
+                                </ol>
+                               </ol>
+                                <span class="fw-lighter fst-italic"> Ketentuan: Tidak ada lebih dari satu petunjuk yang salah di setiap kotak </span>
+                            </li>
+                            <li>
+                                Pemecahan masalah:
+                            </li>
+                            <ul>
+                                <li>Petunjuk [B] & [F] bisa sama-sama benar atau sama-sama salah.</li>
+                                <li>Petunjuk [A] & [E] tidak bisa benar dua-duanya.</li>
+                                <li>Jika [B] & [F] salah, maka [A] & [E] harus benar ß Tidak masuk akal.</li>
+                                <li>Jika [B] & [F] benar, maka kita tinggal melihat petunjuk di K2.</li>
+                                <li>Jika kuncinya di K2, maka [C] & [D] salah. Padahal tidak boleh lebih dari 1 yang salah.</li>
+                            </ul>
+                        </ol>
+                        <h4 class="fw-bold mt-4">Kesimpulan</h4>
+                        <p class="fw-light ms-4">
+                            Maka, kuncinya ada di kotak K3.
+                        </p>
                     </span>
                 </div>
             </div>
